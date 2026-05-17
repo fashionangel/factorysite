@@ -34,8 +34,156 @@ h1{
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
-    color: #333333;;
+    color: #333333;
     width: 379px;
     margin-bottom: 56px;
-   
 }
+
+.basic_text_main{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #333333;
+    margin-bottom: 56px;
+}
+
+.location-text-main{
+    margin:0;
+}
+
+.location-text{
+    margin: 30px auto;
+}
+
+
+
+
+.about-section {
+    max-width: 1180px; 
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #333333;;
+    width: 580px;
+    margin-bottom: 32px;
+    margin-right: 20px;
+}
+    
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px; 
+    margin-bottom: 32px; 
+}
+.part1 p, .part2 p {
+    font-size: 16px; 
+    line-height: 140%; 
+    font-weight: 400;
+    margin: 0;
+}
+.part1 p:first-child {
+    margin-bottom: 30px; 
+}
+
+.image-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%; 
+}
+
+.location-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+section {
+    max-width: 1180px; /* Ваша стандартная ширина контента */
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+/* Заголовок "Продукция" */
+section h1 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 700;
+    font-size: 32px; /* Уменьшили под макет продукции */
+    line-height: 120%;
+    color: #333333;
+    margin-bottom: 40px;
+    width: auto; /* Убрали фиксированные 580px, чтобы не ломать верстку */
+}
+
+/* Флекс-контейнер для карточек */
+.flex {
+    display: flex;
+    justify-content: space-between; /* Распределяет по краям */
+    flex-wrap: wrap; /* ИСПРАВЛЕНО: Разрешает карточкам переноситься на второй ряд */
+    row-gap: 30px; /* Отступ между рядами (верхним и нижним) */
+}
+
+/* Карточка товара (у вас используется .location-card) */
+.location-card {
+    width: 32%; /* Три карточки в ряд (примерно по 32%, остаток идет на зазоры) */
+    background-color: #f8f9fa; /* Светло-серый фон карточек с макета */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Стили для картинок приборов */
+.location-card img {
+    width: 100%;
+    height: 220px; /* Фиксированная высота для зоны с прибором */
+    object-fit: contain; /* Картинка не искажается и центрируется */
+    padding: 30px 20px 10px 20px; /* Отступы вокруг прибора */
+    display: block;
+    box-sizing: border-box;
+}
+
+/* Обертка для текста внутри карточки (ваш тег <div> после <img>) */
+.location-card div {
+    padding: 20px 30px 40px 30px; /* Отступы слева, справа и снизу */
+}
+
+/* Название прибора */
+.location-card h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+/* Ссылка "Подробнее" */
+.location-card a {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4361ee; /* Синий цвет ссылки, как на макете */
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Добавляем стрелочку к ссылке через CSS, чтобы не писать её вручную в HTML */
+.location-card a::after {
+    content: " >";
+}
+
+.location-card a:hover {
+    text-decoration: underline;
+}
+
+
+
+
