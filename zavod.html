@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pioner</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/external.jpg">
 </head>
 <body>
     <header class="headtop">
@@ -28,12 +29,12 @@
             <img src="line.jpg" alt="line" class="head">
             <nav class="flex navigation">
                 <div class="nav-links">
-                    <a href="#main">Главная</a>
-                    <a href="about">О предприятии</a>
-                    <a href="news">Новости</a>
+                    <a href="#home">Главная</a>
+                    <a href="#about">О предприятии</a>
+                    <a href="#news">Новости</a>
                     <a href="#product">Продукция</a>
-                    <a href="#uslugi">Услуги</a>
-                    <a href="#support">Поддержка</a>
+                    <a href="https://www.gosuslugi.ru/" target="_blank">Услуги</a>
+                    <a href="https://ru.wiktionary.org/wiki/%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0" target="_blank">Поддержка</a>
                     <a href="#geography">География поставок</a>
                     <a href="#contacts">Контакты</a>
                 </div>
@@ -62,7 +63,7 @@
             </div>
             
         </section>
-        <section class="about-section">
+        <section class="about-section" id="about">
             <h2 class="h2-2">
              О предприятии
             </h2>
@@ -82,7 +83,6 @@
                         удовлетворять возрастающие требования наших заказчиков.
                     </p>
                 </div>
-
                 <div class="part2">
                     <p class ="basic_text_main location-text-main">
                         В номенклатуре выпускаемой НПП «ПИОНЕР» продукции найдется все, что
@@ -107,7 +107,7 @@
 
         </section>
 
-        <section class="container">
+        <section class="container" id="product">
             <h2 class="h1-3">Продукция</h2>
             <div class="grid-3">
                 <div class="location-card">
@@ -160,18 +160,18 @@
             </div>
         </section>
 
-        <section class="about-map">
+        <section class="about-map" id="geography">
             <div class="container">
                 <div class="location-map">
                     <h4>Представительства</h4>
                     <div class="map-wrapper">
-                        <img src="Russia-map.jpg" alt="Russia Map">
+                        <img class="cursor" src="Russia-map.jpg" alt="Russia Map">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="news-section">
+        <section class="news-section" id="news">
             <div class="container3">
                 <h5>Новости</h5>
                 
@@ -189,7 +189,6 @@
                             <p class="about-cards-date">20.07.2020</p>
                         </div>
                     </div>
-
 
                     <div class="card">
                         <div class="card-img">
@@ -222,7 +221,7 @@
         </section>
  </main>
 
-   <footer class="contact">
+   <footer class="contact" id="contacts">
     <div class="container footer-flex">
         <div class="footer-top"> 
             <div class="footer-logo">
@@ -231,23 +230,23 @@
             
             <div class="footer-nav">
                 <div class="footer-links">
-                    <a href="#">Главная</a>
-                    <a href="#">О предприятии</a>
-                    <a href="#">Новости</a>
-                    <a href="#">Продукция</a>
-                    <a href="#">Услуги</a>
+                    <a href="#home">Главная</a>
+                    <a href="#about">О предприятии</a>
+                    <a href="#news">Новости</a>
+                    <a href="#product">Продукция</a>
+                    <a href="https://www.gosuslugi.ru/" target="_blank">Услуги</a>
                 </div>
 
                 <div class="footer-links">
-                    <a href="#">Поддержка</a>
-                    <a href="#">География поставок</a>
-                    <a href="#">Контакты</a>
+                    <a href="https://ru.wiktionary.org/wiki/%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0" target="_blank">Поддержка</a>
+                    <a href="#geography">География поставок</a>
+                    <a href="#contacts">Контакты</a>    
                 </div>
 
                 <div class="footer-links">
-                    <a href="https://eda.yandex.by/minsk?shippingType=delivery&ysclid=mpbmnpcgzq79791744">Доставка</a>
-                    <a href="https://instagram.com/?ysclid=mpbmoix3gv176905601">Инстаграм</a>
-                    <a href="https://max.ru/">MAX</a>
+                    <a href="https://eda.yandex.by/minsk?shippingType=delivery&ysclid=mpbmnpcgzq79791744" target="_blank">Доставка</a>
+                    <a href="https://instagram.com/?ysclid=mpbmoix3gv176905601" target="_blank">Инстаграм</a>
+                    <a href="https://max.ru/" target="_blank">MAX</a>
                 </div>
             </div>
         </div>
@@ -260,136 +259,5 @@
     
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

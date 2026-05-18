@@ -18,6 +18,13 @@
     align-items: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.cursor{
+  cursor: pointer;
+}
 
 
 /*header*/
@@ -360,7 +367,8 @@ h5{
 .footer-flex {
     display: flex;
     flex-direction: column;
-    gap: 50px; 
+    gap: 50px;
+}
 
 
 .footer-top {
