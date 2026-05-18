@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="headtop">
         <div class="container">
-            <div class="flex">
+            <div class="flex header-top">
                 <p class="logo"><img src="logo.jpg" alt="logo"></p>
 
-                <div class="flex">
+                <div class="flex contacts">
                     <div class= "call">
-                        <p>По вопросам и предложниям</p>
+                        <p>По вопросам и предложениям</p>
                         <a href="#mail">pionerrr@sila.ru</a>
                     </div>
 
@@ -25,10 +25,10 @@
                 </div>
             </div>
 
-            <img src="line.jpg" alt="line">
-            <nav class="flex">
-                <div>
-                    <a href="#main">Главное</a>
+            <img src="line.jpg" alt="line" class="head">
+            <nav class="flex navigation">
+                <div class="nav-links">
+                    <a href="#main">Главная</a>
                     <a href="about">О предприятии</a>
                     <a href="news">Новости</a>
                     <a href="#product">Продукция</a>
@@ -37,15 +37,17 @@
                     <a href="#geography">География поставок</a>
                     <a href="#contacts">Контакты</a>
                 </div>
-                <a href="#call"><img src="phone 1.jpg" alt="phone">ПЕРЕЗВОНИТЕ МНЕ</a>
+                <a id="pup" href="#"><img src="phone.jpg" alt="phone">ПЕРЕЗВОНИТЕ МНЕ</a>
             </nav>
         </div>
+    </header>
+    
+    <main>
         <section class="home" id="home">
             <div class="container ">
                 <div class="flex flex2">
-                    <h1>
-                        Российский завод
-                        силовых машин
+                    <h1 class="h1-1">
+                        Российский завод силовых машин
                     </h1>
 
                     <p class="basic_text location-text">
@@ -55,16 +57,13 @@
                     </p>
                 </div>
 
-                <img src="hero-image.jpg" alt="Factory">
+                <img src="hero-image.jpg" alt="Factory" class="hero">
                 
             </div>
             
         </section>
-    </header>
-
-    <main>
         <section class="about-section">
-            <h2>
+            <h2 class="h2-2">
              О предприятии
             </h2>
             <div class="container2">
@@ -94,12 +93,12 @@
                 </div>
             </div>
                 
-            <div class="image-flex">
-                <div class="location-card">
+            <div class="image-grid">
+                <div class="about-card">
                     <img src="svarshcik.jpg" alt="Varit">
 
                 </div>
-                <div class="location-card">
+                <div class="about-card">
                     <img src="cars.jpg" alt="Cars">
 
                 </div>
@@ -108,179 +107,289 @@
 
         </section>
 
-        <section>
-            <h1>
-               Продукция 
-            </h1>
-            <div class="flex">
-                    <div class="location-card">
-                        <img src="stab-level.jpg" alt="Stab">
-                        <div>
-                            <h3>
-                                Стабилизатор уровня
-                            </h3>
+        <section class="container">
+            <h2 class="h1-3">Продукция</h2>
+            <div class="grid-3">
+                <div class="location-card">
+                    <img src="stab-level.jpg" alt="Stab">
+                    <div>
+                        <h3>Сигнализатор уровня</h3>
+                        <a href="#stab">Подробнее ></a>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <img src="title-aero.jpg" alt="Gaz">
+                    <div>
+                        <h3>Датчики давления</h3>
+                        <a href="#gaz">Подробнее ></a>
+                    </div>
+                </div>
 
-                            <a href="#stab">Подробнее</a>
+                <div class="location-card">
+                    <img src="kamaz.jpg" alt="Turbo">
+                    <div>
+                        <h3>ПИД-регуляторы</h3>
+                        <a href="#turbo">Подробнее ></a>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <img src="turbo.jpg" alt="Aero">
+                    <div>
+                        <h3>Калибратор давления</h3>
+                        <a href="#aero">Подробнее ></a>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <img src="gaz-corr.jpg" alt="Corr">
+                    <div>
+                        <h3>Корректор газа</h3>
+                        <a href="#gaz">Подробнее ></a>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <img src="manometr.jpg" alt="Manometr">
+                    <div>
+                        <h3>Манометры</h3>
+                        <a href="#manometr">Подробнее ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-map">
+            <div class="container">
+                <div class="location-map">
+                    <h4>Представительства</h4>
+                    <div class="map-wrapper">
+                        <img src="Russia-map.jpg" alt="Russia Map">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <div class="container3">
+                <h5>Новости</h5>
+                
+                <div class="flex about-cards">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="consult.jpg" alt="">
+                        </div>
+                        <p class="card-text">
+                            НПП «ПИОНЕР» подтвердило свои компетенции в области консультирования и изготовления…
+                        </p>
+                        <div class="about-cards-flex">
+                            <a href="#" class="about-cards-news">Читать далее</a>
+                            <p class="about-cards-date">20.07.2020</p>
                         </div>
                     </div>
-                    
-                    <div class="location-card">
-                        <img src="gaz corr.jpg" alt="Gaz">
-                        <div>
-                            <h3>
-                                Датчики давления
-                            </h3>
 
-                            <a href="#gaz">Подробнее</a>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="greg.jpg" alt="">
+                        </div>
+                        <p class="card-text">
+                            Поздравляем коллектив регионального представительства «ПИОНЕР» с праздником!
+                        </p>
+                        <div class="about-cards-flex">
+                            <a href="#" class="about-cards-news">Читать далее</a>
+                            <p class="about-cards-date">18.07.2020</p>
                         </div>
                     </div>
 
-
-                    <div class="location-card">
-                        <img src="turbo 1.jpg" alt="Turbo">
-                        <div>
-                            <h3>
-                                ПИД-регуляторы
-                            </h3>
-
-                            <a href="#turbo">Подробнее</a>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="rafael.jpg" alt="">
                         </div>
-                    </div>
-
-                    <div class="location-card">
-                        <img src="title-aero 1.jpg" alt="Aero">
-                        <div>
-                            <h3>
-                                Калибратор давления
-                            </h3>
-
-                            <a href="#aero">Подробнее</a>
-                        </div>
-                    </div>
-
-                    <div class="location-card">
-                        <img src="gaz corr.jpg" alt="Corr">
-                        <div>
-                            <h3>
-                                Корректор расхода газа
-                            </h3>
-
-                            <a href="#gaz">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="location-card">
-                        <img src="manometr.jpg" alt="Manometr">
-                        <div>
-                            <h3>
-                                Манометры
-                            </h3>
-
-                            <a href="#manometr">Подробнее</a>
+                        <p class="card-text">
+                            Перенос сроков проведения запланированных работ в 2020 году
+                        </p>
+                        <div class="about-cards-flex">
+                            <a href="#" class="about-cards-news">Читать далее</a>
+                            <p class="about-cards-date">20.06.2020</p>
                         </div>
                     </div>
 
                 </div>
             </div>
-
         </section>
-
-        <section>
-            <div>
-                <h1>
-                    Представительства
-                </h1>
-
-                <img src="Russia map.jpg" alt="Russia">
-            </div>
-        </section>
-
-        <section>
-            <div>
-                   <div class="flex about-cards" >
-                        <div class="about-cards-blur">
-                           <img src="consult.jpg" alt="">
-                           <p>
-                            НПП «ПИОНЕР» подтвердило свои
-                            компетенции в области
-                            консультирования и изготовления…
-                           </p>
-                    
-                            <div class="about-cards-flex">
-                             <p class="about-cards-news"><span class="about-cards-city-text">Читать далее</span></p>
-                             <p class="about-cards-date">20.07.2020</p>
-                            </div>
-                        </div>
-
-                        <div>
-                           <img src="greg-rosenke-xoxnfVIE7Qw-unsplash 1 (1).jpg" alt="">
-                           <p>
-                            Поздравляем коллектив
-                            регионального представительства
-                            «ПИОНЕР» с праздником!
-                           </p>
-                           <div class="about-cards-flex">
-                             <p class="about-cards-news"><span class="about-cards-city-text">Читать далее</span></p>
-                             <p class="about-cards-date">18.07.2020</p>
-                           </div>
-                          
-                        </div>
-
-                        <div>
-                          <img src="rafael-juarez-hTUdXgbhd3o-unsplash 1.jpg" alt="">
-                          <p>
-                            Перенос сроков проведения
-                            запланированных работ в 2020 году
-                          </p>
-                          <div class="about-cards-flex">
-                             <p class="about-cards-city"><span class="about-cards-city-text">Читать далее</span></p>
-                             <p class="about-cards-star">20.06.2020</p>
-                          </div>
-                          
-                        </div>
-                    </div>
-             
-            </div>               
-        </section>
-   </main>
+ </main>
 
    <footer class="contact">
     <div class="container footer-flex">
-            <div> 
-                <img src="logo (1).jpg" alt="">
-                    
+        <div class="footer-top"> 
+            <div class="footer-logo">
+                <img src="logo.png" alt="ПИОНЕР">
+            </div>
+            
+            <div class="footer-nav">
                 <div class="footer-links">
-
                     <a href="#">Главная</a>
                     <a href="#">О предприятии</a>
                     <a href="#">Новости</a>
                     <a href="#">Продукция</a>
                     <a href="#">Услуги</a>
-
                 </div>
 
                 <div class="footer-links">
-
                     <a href="#">Поддержка</a>
                     <a href="#">География поставок</a>
                     <a href="#">Контакты</a>
                 </div>
 
-                <div class="footer-links-end">
-                    <a href="#">Файлы</a>
-                    <a href="#">Поддержка</a>
-                    <a href="#">Политика конфиденциальности</a>
+                <div class="footer-links">
+                    <a href="https://eda.yandex.by/minsk?shippingType=delivery&ysclid=mpbmnpcgzq79791744">Доставка</a>
+                    <a href="https://instagram.com/?ysclid=mpbmoix3gv176905601">Инстаграм</a>
+                    <a href="https://max.ru/">MAX</a>
                 </div>
-
-            </div>
-            <div>
-                <p>
-                1994 — 2020 ООО «ПИОНЕР»
-                </p>
             </div>
         </div>
-   </footer>
 
-    
+        <div class="footer-bottom">
+            <p>1994 — 2020 ООО «ПИОНЕР»</p>
+        </div>
+    </div>
+</footer>
     
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

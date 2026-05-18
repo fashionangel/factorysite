@@ -8,26 +8,76 @@
 
 .container{
     max-width: 1180px;
-    margin: 80px auto;
+    margin: 20px auto;
+    padding: 0 15px;
 }
 
 .flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.flex2{
-    justify-content: start;
+
+
+/*header*/
+
+
+
+.header-top {
+    margin-bottom: 16px;
+}
+.call, .consult {
+    text-align: right;
+}
+.call p, .consult p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 140%;
+}
+.call a, .consult a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #607CE6; 
+    text-decoration: none;
+}
+.head-line {
+    width: 100%;
+    margin: 16px 0;
+}
+.nav-links {
+    display: flex;
+    gap: 44px; 
+}
+.nav-links a {
+    color: #333333;
+    font-size: 16px;
+}
+.contacts {
+    gap: 40px; 
 }
 
-h1{
+#pup{
+    display: flex;
+    align-items: center;
+    color: #607CE6;
+    font-weight: 400;
+    font-size: 14px;
+    gap: 8px;
+}
+
+header a{
+    text-decoration: none;
+}
+/*main*/
+
+
+.h1-1{
     font-weight: 700;
     font-size: 60px;
     line-height: 120%;
     color: #333333;;
-    width: 580px;
-    margin-bottom: 32px;
-    margin-right: 20px;
+    max-width: 580px;
 }
 
 .basic_text{
@@ -36,7 +86,7 @@ h1{
     line-height: 120%;
     color: #333333;
     width: 379px;
-    margin-bottom: 56px;
+    margin-top: 10px;
 }
 
 .basic_text_main{
@@ -54,136 +104,295 @@ h1{
 .location-text{
     margin: 30px auto;
 }
-
-
-
+.flex2{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .about-section {
     max-width: 1180px; 
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 20px;
 }
 
-h2 {
+.h2-2 {
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
-    color: #333333;;
-    width: 580px;
-    margin-bottom: 32px;
-    margin-right: 20px;
+    color: #333333;
+    margin-top:50px;
 }
     
-
 .container2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px; 
-    margin-bottom: 32px; 
+    margin-bottom: 48px; 
 }
 .part1 p, .part2 p {
     font-size: 16px; 
     line-height: 140%; 
     font-weight: 400;
-    margin: 0;
+    margin-top: 20px;
 }
 .part1 p:first-child {
     margin-bottom: 30px; 
 }
 
-.image-flex {
+.image-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2%; 
+    column-gap: 40px; 
 }
 
 .location-card img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    max-height: 160px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    display: block;
+    margin-bottom:107px; 
+    align-self: flex-start;
+}
+
+.h1-3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #333333;
+    margin-top: 80px;
+    margin-bottom: 32px; ;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+
+.about-card {
+    width: 100%;
+}
+
+.about-card img {
+    width: 100%;
+    height: 280px; 
     display: block;
     object-fit: cover;
 }
 
-
-
-section {
-    max-width: 1180px; /* Ваша стандартная ширина контента */
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-/* Заголовок "Продукция" */
-section h1 {
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 700;
-    font-size: 32px; /* Уменьшили под макет продукции */
-    line-height: 120%;
-    color: #333333;
-    margin-bottom: 40px;
-    width: auto; /* Убрали фиксированные 580px, чтобы не ломать верстку */
-}
-
-/* Флекс-контейнер для карточек */
-.flex {
-    display: flex;
-    justify-content: space-between; /* Распределяет по краям */
-    flex-wrap: wrap; /* ИСПРАВЛЕНО: Разрешает карточкам переноситься на второй ряд */
-    row-gap: 30px; /* Отступ между рядами (верхним и нижним) */
-}
-
-/* Карточка товара (у вас используется .location-card) */
 .location-card {
-    width: 32%; /* Три карточки в ряд (примерно по 32%, остаток идет на зазоры) */
-    background-color: #f8f9fa; /* Светло-серый фон карточек с макета */
+    background-color: #f7f7f7;      
+    padding: 40px 30px;             
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+    justify-content: space-between;  
+    min-height: 400px;             
+    box-sizing: border-box;         
 }
 
-/* Стили для картинок приборов */
-.location-card img {
-    width: 100%;
-    height: 220px; /* Фиксированная высота для зоны с прибором */
-    object-fit: contain; /* Картинка не искажается и центрируется */
-    padding: 30px 20px 10px 20px; /* Отступы вокруг прибора */
-    display: block;
-    box-sizing: border-box;
-}
-
-/* Обертка для текста внутри карточки (ваш тег <div> после <img>) */
 .location-card div {
-    padding: 20px 30px 40px 30px; /* Отступы слева, справа и снизу */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;                      
+    margin: 0;
+    align-items: flex-start;        
 }
 
-/* Название прибора */
 .location-card h3 {
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
     color: #333333;
-    margin-bottom: 12px;
+    margin: 0; 
 }
 
 /* Ссылка "Подробнее" */
 .location-card a {
-    font-family: "Source Sans 3", sans-serif;
+    font-size: 20px;
+    color: #607CE6;
+    text-decoration: none;         
+    align-items: center;
+    margin: 0;
+}
+
+
+
+
+
+
+/* section with map*/
+.about-map {
+    padding: 60px 0;   
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h4{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #333333;;
+    max-width: 580px;
+}
+.map-wrapper {
+    width: 1180px;
+    max-width: 715px;        
+    display: block;
+}
+
+
+
+
+.container3 {
+    max-width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.news-section {
+    padding: 40px 0;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #333333;
+    margin-bottom: 40px;
+    margin-left: auto;
+
+}
+
+.about-cards {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    width: 380px;
+    height: 478px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card-img {
+    width: 380px;
+    height: 251px; 
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
     font-weight: 400;
-    font-size: 14px;
-    color: #4361ee; /* Синий цвет ссылки, как на макете */
+    font-size: 20px;   
+    line-height: 140%;  
+    color: #333333;
+    padding: 25px 20px 0 20px;
+    margin: 0; 
+    flex-grow: 1; 
+    overflow: hidden; 
+}
+
+.about-cards-flex {
+    margin-top: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 25px 20px; 
+}
+
+.about-cards-news {
+    font-size: 16px;
+    color: #607CE6;
     text-decoration: none;
-    display: inline-block;
 }
 
-/* Добавляем стрелочку к ссылке через CSS, чтобы не писать её вручную в HTML */
-.location-card a::after {
-    content: " >";
+.about-cards-date {
+    font-size: 14px;
+    color: #888888;
+    margin: 0;
 }
 
-.location-card a:hover {
-    text-decoration: underline;
+.headtop{
+    margin-bottom: 80px;
+    padding: 32px;
 }
 
 
+/*footer*/
+
+.contact {
+    background-color: #333333; 
+    color: #ffffff;
+    padding: 56px 0 30px 0;
+    margin-top: 80px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
 
 
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 80px; 
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.footer-links a {
+    color: #FFFFFF; 
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #777777; 
+    font-size: 14px;
+    margin: 0;
+}
